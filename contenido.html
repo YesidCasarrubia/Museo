@@ -28,8 +28,8 @@
 
     model-viewer {
       width: 100%;
-      max-width: 350px; /* Reducción del tamaño del modelo */
-      height: 350px; /* Reducción de la altura del modelo */
+      max-width: 370px; /* Aumenta el tamaño máximo del modelo */
+      height: 370px; /* Aumenta la altura del modelo */
     }
 
     h1 {
@@ -41,9 +41,11 @@
     }
 
     p {
-      font-size: 11px;
+      font-size: 11px; /* Aumenta el tamaño de fuente para la descripción */
       color: #666; /* Color de texto de la descripción */
-      margin-left: 20px; /* Margen a la izquierda para separar del modelo */
+      margin-left: 1px; /* Margen a la izquierda para separar del modelo */
+      max-width: 300px; /* Limitar el ancho de la descripción para mayor legibilidad */
+      text-align: left; /* Alinear el texto a la izquierda */
     }
   </style>
   <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -131,7 +133,7 @@
           <model-viewer src="models/modelo3d.glb" alt="Vasija Zenu" auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/modelo3d.usdz"></model-viewer>
           <div>
             <h2>Modelo 3</h2>
-            <p>Una basija precolombina es un recipiente de cerámica creado por culturas indígenas de América, decorado con diseños geométricos o naturales. Utilizadas para conservar alimentos y líquidos o en ceremonias, reflejan las prácticas y creencias de las sociedades que las fabricaron..</p>
+            <p>Una basija precolombina es un recipiente de cerámica creado por culturas indígenas de América, decorado con diseños geométricos o naturales. Utilizadas para conservar alimentos y líquidos o en ceremonias, reflejan las prácticas y creencias de las sociedades que las fabricaron.</p>
           </div>
         </div>
 
@@ -140,7 +142,7 @@
           <model-viewer src="models/modelo3d.glb" alt="Vasija Zenu" auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/modelo3d.usdz"></model-viewer>
           <div>
             <h2>Modelo 4</h2>
-            <p>Esta es una breve descripción del modelo 4 Una basija precolombina es un recipiente de cerámica creado por culturas indígenas de América, decorado con diseños geométricos o naturales. Utilizadas para conservar alimentos y líquidos o en ceremonias, reflejan las prácticas y creencias de las sociedades que las fabricaron..</p>
+            <p>Esta es una breve descripción del modelo 4. Una basija precolombina es un recipiente de cerámica creado por culturas indígenas de América, decorado con diseños geométricos o naturales. Utilizadas para conservar alimentos y líquidos o en ceremonias, reflejan las prácticas y creencias de las sociedades que las fabricaron.</p>
           </div>
         </div>
 
@@ -149,7 +151,7 @@
           <model-viewer src="models/modelo3d.glb" alt="Vasija Zenu" auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/modelo3d.usdz"></model-viewer>
           <div>
             <h2>Modelo 5</h2>
-            <p>Una basija preco jhbhv  es un recipiente de cerámica creado por culturas indígenas de América, decorado con diseños geométricos o naturales. Utilizadas para conservar alimentos y líquidos o en ceremonias, reflejan las prácticas y creencias de las sociedades que las fabricaron.</p>
+            <p>Una basija precolombina es un recipiente de cerámica creado por culturas indígenas de América, decorado con diseños geométricos o naturales. Utilizadas para conservar alimentos y líquidos o en ceremonias, reflejan las prácticas y creencias de las sociedades que las fabricaron.</p>
           </div>
         </div>
 
@@ -162,18 +164,41 @@
           </div>
         </div>
       </div>
-
-      <footer class="center"><a class="btn" href="#">Botón de acción</a></footer>
     </article>
   </div>
 
-  <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
-  <!-- JAVASCRIPTS -->
-  <script src="layout/scripts/jquery.min.js"></script>
-  <script src="layout/scripts/jquery.backtotop.js"></script>
-  <script src="layout/scripts/jquery.mobilemenu.js"></script>
+  <div class="wrapper row3">
+    <footer id="footer" class="hoc clear">
+      <div class="one_quarter first">
+        <h6 class="heading">Acerca de nosotros</h6>
+        <p>Somos un museo dedicado a la conservación y promoción de la cultura precolombina.</p>
+        <p>Visítanos y descubre más sobre nuestra historia.</p>
+      </div>
+      <div class="one_quarter">
+        <h6 class="heading">Contacto</h6>
+        <ul class="nospace linklist">
+          <li><a href="#">+57 (123) 456 7890</a></li>
+          <li><a href="#">info@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="one_quarter">
+        <h6 class="heading">Redes Sociales</h6>
+        <ul class="nospace linklist">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="one_quarter">
+        <h6 class="heading">Enlaces útiles</h6>
+        <ul class="nospace linklist">
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
 </body>
-  
-</html>
 
+</html>
 
