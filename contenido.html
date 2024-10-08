@@ -13,45 +13,37 @@
     }
 
     .model-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
       margin-top: 20px;
     }
 
-    .model-item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: left;
-    }
-
-    .model-viewer-wrapper {
-      flex: 1;
-    }
-
-    .model-description {
-      flex: 1;
-      padding-left: 20px;
-    }
-
-    .model-description h2 {
-      margin-bottom: 10px;
-    }
-
-    .model-description p {
-      font-size: 14px;
-      color: #666;
+    .model-block {
+      display: flex; /* Usamos flex para alinear el modelo y la descripción */
+      align-items: center; /* Centra verticalmente */
+      border: 1px solid #ccc; /* Borde alrededor de cada bloque */
+      border-radius: 10px; /* Esquinas redondeadas */
+      padding: 20px; /* Espaciado interno */
+      margin-bottom: 20px; /* Espaciado entre bloques */
+      background-color: #f9f9f9; /* Color de fondo */
     }
 
     model-viewer {
       width: 100%;
-      max-width: 300px;
-      height: 300px;
+      max-width: 200px; /* Reducción del tamaño del modelo */
+      height: 200px; /* Reducción de la altura del modelo */
     }
 
     h1 {
       margin-bottom: 40px;
+    }
+
+    h2 {
+      margin: 10px 0; /* Margen superior e inferior para títulos */
+    }
+
+    p {
+      font-size: 14px;
+      color: #666; /* Color de texto de la descripción */
+      margin-left: 20px; /* Margen a la izquierda para separar del modelo */
     }
   </style>
   <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -87,7 +79,7 @@
         <nav id="mainav" class="fl_right">
           <ul class="clear">
             <li class="active"><a href="index.html">INICIO</a></li>
-            <li><a href="contenido.html">Antiguedades</a></li>
+            <li><a href="#">Ventana</a></li>
             <li><a href="#">Ventana</a></li>
             <li><a href="#">Ventana</a></li>
             <li><a href="#">Ventana</a></li>
@@ -117,68 +109,56 @@
       <!-- Contenedor de los modelos 3D y sus descripciones -->
       <div class="model-container">
         <!-- Modelo 1 -->
-        <div class="model-item">
-          <div class="model-viewer-wrapper">
-            <model-viewer src="models/modelo3d.glb" alt="Vasija Zenu" auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/modelo3d.usdz"></model-viewer>
-          </div>
-          <div class="model-description">
+        <div class="model-block">
+          <model-viewer src="models/modelo3d.glb" alt="Vasija Zenu" auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/modelo3d.usdz"></model-viewer>
+          <div>
             <h2>Modelo 1</h2>
-            <p>Esta es una breve descripción del modelo 1.</p>
+            <p>Una basija precolombina es un recipiente de cerámica creado por culturas indígenas de América, decorado con diseños geométricos o naturales. Utilizadas para conservar alimentos y líquidos o en ceremonias, reflejan las prácticas y creencias de las sociedades que las fabricaron.</p>
           </div>
         </div>
 
         <!-- Modelo 2 -->
-        <div class="model-item">
-          <div class="model-viewer-wrapper">
-            <model-viewer src="models/modelo3d.glb" alt="Vasija Zenu" auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/modelo3d.usdz"></model-viewer>
-          </div>
-          <div class="model-description">
+        <div class="model-block">
+          <model-viewer src="models/modelo3d.glb" alt="Vasija Zenu" auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/modelo3d.usdz"></model-viewer>
+          <div>
             <h2>Modelo 2</h2>
-            <p>Esta es una breve descripción del modelo 2.</p>
+            <p>Una basija precolombina es un recipiente de cerámica creado por culturas indígenas de América, decorado con diseños geométricos o naturales. Utilizadas para conservar alimentos y líquidos o en ceremonias, reflejan las prácticas y creencias de las sociedades que las fabricaron.</p>
           </div>
         </div>
 
         <!-- Modelo 3 -->
-        <div class="model-item">
-          <div class="model-viewer-wrapper">
-            <model-viewer src="models/modelo3d.glb" alt="Vasija Zenu" auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/modelo3d.usdz"></model-viewer>
-          </div>
-          <div class="model-description">
+        <div class="model-block">
+          <model-viewer src="models/modelo3d.glb" alt="Vasija Zenu" auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/modelo3d.usdz"></model-viewer>
+          <div>
             <h2>Modelo 3</h2>
-            <p>Esta es una breve descripción del modelo 3.</p>
+            <p>Una basija precolombina es un recipiente de cerámica creado por culturas indígenas de América, decorado con diseños geométricos o naturales. Utilizadas para conservar alimentos y líquidos o en ceremonias, reflejan las prácticas y creencias de las sociedades que las fabricaron..</p>
           </div>
         </div>
 
         <!-- Modelo 4 -->
-        <div class="model-item">
-          <div class="model-viewer-wrapper">
-            <model-viewer src="models/modelo3d.glb" alt="Vasija Zenu" auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/modelo3d.usdz"></model-viewer>
-          </div>
-          <div class="model-description">
+        <div class="model-block">
+          <model-viewer src="models/modelo3d.glb" alt="Vasija Zenu" auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/modelo3d.usdz"></model-viewer>
+          <div>
             <h2>Modelo 4</h2>
-            <p>Esta es una breve descripción del modelo 4.</p>
+            <p>Est es una breve descripción del modelo 4 Una basija precolombina es un recipiente de cerámica creado por culturas indígenas de América, decorado con diseños geométricos o naturales. Utilizadas para conservar alimentos y líquidos o en ceremonias, reflejan las prácticas y creencias de las sociedades que las fabricaron..</p>
           </div>
         </div>
 
         <!-- Modelo 5 -->
-        <div class="model-item">
-          <div class="model-viewer-wrapper">
-            <model-viewer src="models/modelo3d.glb" alt="Vasija Zenu" auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/modelo3d.usdz"></model-viewer>
-          </div>
-          <div class="model-description">
+        <div class="model-block">
+          <model-viewer src="models/modelo3d.glb" alt="Vasija Zenu" auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/modelo3d.usdz"></model-viewer>
+          <div>
             <h2>Modelo 5</h2>
-            <p>Esta es una breve descripción del modelo 5.</p>
+            <p>Una basija precolombina es un recipiente de cerámica creado por culturas indígenas de América, decorado con diseños geométricos o naturales. Utilizadas para conservar alimentos y líquidos o en ceremonias, reflejan las prácticas y creencias de las sociedades que las fabricaron.</p>
           </div>
         </div>
 
         <!-- Modelo 6 -->
-        <div class="model-item">
-          <div class="model-viewer-wrapper">
-            <model-viewer src="models/modelo3d.glb" alt="Vasija Zenu" auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/modelo3d.usdz"></model-viewer>
-          </div>
-          <div class="model-description">
+        <div class="model-block">
+          <model-viewer src="models/modelo3d.glb" alt="Vasija Zenu" auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/modelo3d.usdz"></model-viewer>
+          <div>
             <h2>Modelo 6</h2>
-            <p>Esta es una breve descripción del modelo 6.</p>
+            <p>Una basija precolombina es un recipiente de cerámica creado por culturas indígenas de América, decorado con diseños geométricos o naturales. Utilizadas para conservar alimentos y líquidos o en ceremonias, reflejan las prácticas y creencias de las sociedades que las fabricaron.</p>
           </div>
         </div>
       </div>
@@ -195,3 +175,4 @@
 </body>
 
 </html>
+
