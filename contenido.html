@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="">
 
 <head>
   <title>MUSEO</title>
@@ -42,50 +42,10 @@
 
     p {
       font-size: 11px; /* Aumenta el tamaño de fuente para la descripción */
-      color: #666; /* Color de texto de la descripción */
+      color: #474747; /* Color de texto de la descripción */
       margin-left: 1px; /* Margen a la izquierda para separar del modelo */
       max-width: 300px; /* Limitar el ancho de la descripción para mayor legibilidad */
       text-align: left; /* Alinear el texto a la izquierda */
-    }
-
-    /* Estilos para el menú */
-    #mainav {
-      display: flex;
-    }
-
-    #menu-toggle {
-      display: none; /* Oculto por defecto */
-      flex-direction: column;
-      cursor: pointer;
-      margin-left: auto; /* Alinea a la derecha */
-    }
-
-    #menu-toggle .bar {
-      height: 3px;
-      width: 25px;
-      background-color: #333;
-      margin: 4px 0;
-    }
-
-    /* Estilos para pantallas pequeñas */
-    @media (max-width: 768px) {
-      #mainav {
-        display: none; /* Ocultar navegación en dispositivos pequeños */
-        flex-direction: column; /* Alinear verticalmente */
-      }
-
-      #menu-toggle {
-        display: flex; /* Mostrar el botón de menú hamburguesa */
-      }
-
-      #nav-links.active {
-        display: flex; /* Mostrar los enlaces al hacer clic */
-        flex-direction: column; /* Alinear verticalmente */
-      }
-
-      #nav-links {
-        display: none; /* Asegurarse de que esté oculto por defecto */
-      }
     }
   </style>
   <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -116,15 +76,10 @@
     <div class="wrapper row1">
       <header id="header" class="hoc clear">
         <div id="logo" class="fl_left">
-          <h1><a href="index.html">Nombre del Museo</a></h1>
-        </div>
-        <div id="menu-toggle" class="fl_right" onclick="toggleMenu()">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+          <h1><a>Nombre del Museo</a></h1>
         </div>
         <nav id="mainav" class="fl_right">
-          <ul class="clear" id="nav-links">
+          <ul class="clear">
             <li class="active"><a href="index.html">INICIO</a></li>
             <li><a href="contenido.html">Antiguedades</a></li>
             <li><a href="#">Ventana</a></li>
@@ -139,7 +94,7 @@
       <article class="center">
         <h3 class="heading underline">¡Aquí una frase popular!</h3>
         <h8>Una pequeña descripción del sitio que cuenta lo que se puede encontrar en la página.</h8>
-        <footer><a class="btn" href="#">Botón de acción</a></footer>
+        <footer><a class="btn" href="index.html"> Ir a Inicio</a></footer>
       </article>
     </div>
   </div>
@@ -187,7 +142,7 @@
           <model-viewer src="models/modelo3d.glb" alt="Vasija Zenu" auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/modelo3d.usdz"></model-viewer>
           <div>
             <h2>Modelo 4</h2>
-            <p>Una basija precolombina es un recipiente de cerámica creado por culturas indígenas de América, decorado con diseños geométricos o naturales. Utilizadas para conservar alimentos y líquidos o en ceremonias, reflejan las prácticas y creencias de las sociedades que las fabricaron.</p>
+            <p>Esta es una breve descripción del modelo 4. Una basija precolombina es un recipiente de cerámica creado por culturas indígenas de América, decorado con diseños geométricos o naturales. Utilizadas para conservar alimentos y líquidos o en ceremonias, reflejan las prácticas y creencias de las sociedades que las fabricaron.</p>
           </div>
         </div>
 
@@ -199,17 +154,19 @@
             <p>Una basija precolombina es un recipiente de cerámica creado por culturas indígenas de América, decorado con diseños geométricos o naturales. Utilizadas para conservar alimentos y líquidos o en ceremonias, reflejan las prácticas y creencias de las sociedades que las fabricaron.</p>
           </div>
         </div>
+
+        <!-- Modelo 6 -->
+        <div class="model-block">
+          <model-viewer src="models/modelo3d.glb" alt="Vasija Zenu" auto-rotate camera-controls ar ar-modes="webxr scene-viewer quick-look" ios-src="models/modelo3d.usdz"></model-viewer>
+          <div>
+            <h2>Modelo 6</h2>
+            <p>Una basija precolombina es un recipiente de cerámica creado por culturas indígenas de América, decorado con diseños geométricos o naturales. Utilizadas para conservar alimentos y líquidos o en ceremonias, reflejan las prácticas y creencias de las sociedades que las fabricaron.</p>
+          </div>
+        </div>
       </div>
     </article>
   </div>
 
-  <script>
-    function toggleMenu() {
-      const navLinks = document.getElementById('nav-links');
-      navLinks.classList.toggle('active'); // Alternar la clase activa
-    }
-  </script>
 </body>
 
 </html>
-
